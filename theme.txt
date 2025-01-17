@@ -1,0 +1,175 @@
+"editor.bracketPairColorization.enabled": false, //Parenteses colorido. Caso queira, deixe como true
+
+"editor.tokenColorCustomizations": {
+    "textMateRules": [
+        {
+            "name": "Classes e Tipos (Classes e estruturas de dados)", // Estiliza tipos, classes e enums.
+            "scope": [
+                "entity.name.type", // Nomes de tipos.
+                "storage.type.primitive", // Tipos primitivos.
+                "storage.type.built-in.primitive", // Tipos primitivos embutidos.
+                "support.type", // Tipos de suporte.
+                "storage.type.struct", // Estruturas de dados.
+                "entity.name.type.class", // Classes.
+                "support.class", // Classes de suporte.
+                "entity.name.type.interface", // Interfaces.
+                "entity.name.type.enum" // Enums.
+            ],
+            "settings": {
+                "foreground": "#ff906f" 
+            }
+        },
+        {
+            "name": "Funções e Métodos (Chamadas de função e métodos)", // Personaliza funções e métodos.
+            "scope": [
+                "entity.name.function", // Declarações de funções.
+                "meta.function", // Metadados de funções.
+                "meta.function-call", // Chamadas de funções.
+                "support.function", // Funções de suporte?
+                "entity.name.funcion.member" // Funções como membros.
+            ],
+            "settings": {
+                "foreground": "#0ad2fb" 
+            }
+        },
+        {
+            "name": "Variáveis (Nomes de variáveis e argumentos)", // Define cores para variáveis.
+            "scope": [
+                "entity.name.variable", // Nomes de variáveis.
+                "meta.function-call.arguments", // Argumentos.
+                "variable.other.object", // Variáveis associadas a objetos.
+                "variable.other.readwrite" // Variáveis de leitura e escrita.
+            ],
+            "settings": {
+                "foreground": "#0ad2fb" 
+            }
+        },
+        {
+            "name": "Constantes (Valores constantes e condições)", // Destaca constantes.
+            "scope": [
+                "variable.other.constant", // Variáveis constantes.
+                "meta.conditional.case", // Casos condicionais.
+                "meta.parens" // Parênteses em expressões.
+            ],
+            "settings": {
+                "foreground": "#0ad2fb" 
+            }
+        },
+        {
+            "name": "Números e Unidades (Literais numéricos)", // Personaliza números.
+            "scope": [
+                "constant.numeric", // Literais numéricos.
+                "keyword.other.unit.suffix" // Unidades como "px".
+            ],
+            "settings": {
+                "foreground": "#919090" 
+            }
+        },
+        {
+            "name": "Constantes de Biblioteca (Constantes do sistema)", // Cores para constantes padrão.
+            "scope": [
+                "support.constant", // Constantes de suporte.
+                "constant.language" // Constantes do idioma.
+            ],
+            "settings": {
+                "foreground": "#ff906f" 
+            }
+        },
+        {
+            "name": "Parâmetros (Argumentos de funções)", // Cores para parâmetros.
+            "scope": "variable.parameter", // Parâmetros de classes e métodos.
+            "settings": {
+                "foreground": "#ffffff" 
+            }
+        },
+        {
+            "name": "Propriedades (Atributos de objetos)", // Define propriedades de objetos.
+            "scope": [
+                "variable.other.property", // Propriedades.
+                "meta.attribute", // Atributos.
+                "support.type.property-name.json", // Propriedades JSON.
+                "variable.other.enummember" // Membros de enum.
+            ],
+            "settings": {
+                "foreground": "#0ad2fb" 
+            }
+        },
+        {
+            "name": "Comentários (Blocos e linhas de comentário)", //  Comentários.
+            "scope": [
+                "comment", // Comentários de linha.
+                "string.quoted.docstring", // Docstrings
+                "string.quoted.double.block" // Strings de bloco.
+            ],
+            "settings": {
+                "foreground": "#919bc3" 
+            }
+        },
+        {
+            "name": "Palavras-chave (Instruções reservadas)", // Define palavras-chave.
+            "scope": [
+                "keyword", // Palavras-chave gerais.
+                "keyword.operator.new", // Operadores como "new".
+                "variable.language", // Variáveis padrão do idioma.
+                "storage.modifier", // Modificadores de armazenamento.
+                "storage.type", // Tipos de armazenamento.
+                "storage.modifier.specifier.const" // Modificadores "const".
+            ],
+            "settings": {
+                "foreground": "#51e191" 
+            }
+        },
+        {
+            "name": "Variáveis de Linguagem (Palavras reservadas especiais)", // Estiliza variáveis padrão.
+            "scope": "variable.language", // Variáveis de sistema.
+            "settings": {
+                "fontStyle": "bold italic" // Negrito e itálico.
+            }
+        },
+        {
+            "name": "Operadores (Operações matemáticas e lógicas)", // Define operadores.
+            "scope": [
+                "keyword.operator", // Operadores gerais.
+                "entity.name.function.operator", // Operadores em funções.
+            ],
+            "settings": {
+                "foreground": "#ffffff" 
+            }
+        },
+        {
+            "name": "Strings", // Define cores para strings.
+            "scope": "string", // Strings em geral.
+            "settings": {
+                "foreground": "#fb557e" 
+            }
+        },
+       
+        {
+            "name": "Pragmas (Instruções específicas de compilador)", // Define pragmas.
+            "scope": "entity.other.attribute-name.pragma", // Instruções pragma.
+            "settings": {
+                "foreground": "#919090" 
+            }
+        },
+        {
+            "name": "Pontuação (Delimitadores e separadores)", // Define pontuação.
+            "scope": [
+                "punctuation.section", // Seções de código.
+                "punctuation.separator", // Separadores.
+                "punctuation.definition.begin.bracket", // Início de colchetes.
+                "punctuation.definition.end.bracket", // Fim de colchetes.
+                "punctuation.terminator", // Terminadores.
+                "punctuation.definition.parameters", // Definição de parâmetros.
+                "punctuation.definition.arguments", // Argumentos.
+                "punctuation.parenthesis", // Parênteses.
+                "meta.brace", // Chaves.
+                "punctuation.definition.list", // Listas.
+                "punctuation.definition.block", // Blocos.
+                "punctuation.accessor" // Acessores de objetos.
+            ],
+            "settings": {
+                "foreground": "#ffffff" 
+            }
+        }
+    ]
+}
